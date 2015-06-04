@@ -5,6 +5,7 @@ require 'multi_json'
 module Split
   class API < Sinatra::Base
     enable :sessions
+    disable :protection
     helpers Split::Helper
 
     get '/ab_test' do
