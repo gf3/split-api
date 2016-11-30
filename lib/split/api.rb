@@ -9,6 +9,7 @@ module Split
     helpers Split::Helper
 
     get '/ab_test' do
+      content_type :json
       experiment = params[:experiment]
       control = params[:control]
       alternatives = params[:alternatives]
